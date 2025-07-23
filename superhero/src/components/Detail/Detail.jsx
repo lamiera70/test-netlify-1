@@ -8,11 +8,7 @@ export default function Detail({children, heroes}) {
 
     const {id} = useParams(); // stringa
 
-    console.log(heroes);
-    
     const hero = heroes ? heroes.find(h => h.id.toString() === id.toString()) : {};
-
-    console.log(hero);
 
     const navigate = useNavigate();
 
